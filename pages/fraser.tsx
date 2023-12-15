@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { NotionPage } from '@/components/NotionPage'
 import { domain } from '@/lib/config-fraser'
-import { resolveNotionPage } from '@/lib/resolve-notion-page'
+import { resolveNotionPage } from '@/lib/resolve-notion-page-fraser'
 
 export const getStaticProps = async () => {
   try {
