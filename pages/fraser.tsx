@@ -1,23 +1,9 @@
-import * as React from 'react'
+import React from 'react'
 
-import { NotionPage } from '@/components/NotionPageFraser'
-import { domain } from '@/lib/config-fraser'
-import { resolveNotionPage } from '@/lib/resolve-notion-page-fraser'
-
-export const getStaticProps = async () => {
-  try {
-    const props = await resolveNotionPage(domain)
-
-    return { props, revalidate: 10 }
-  } catch (err) {
-    console.error('page error', domain, err)
-
-    // we don't want to publish the error version of this page, so
-    // let next.js know explicitly that incremental SSG failed
-    throw err
-  }
+const fraser = () => {
+  return (
+    <div>her skal det dukke opp fraser</div>
+  )
 }
 
-export default function NotionDomainPage(props) {
-  return <NotionPage {...props} />
-}
+export default fraser
