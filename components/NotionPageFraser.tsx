@@ -216,7 +216,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
     isDev: config.isDev,
     title,
     pageId,
-    rootNotionPageIdFraser: site.rootNotionPageIdFraser,
+    rootNotionPageId: site.rootNotionPageIdFraser,
     recordMap
   })
 
