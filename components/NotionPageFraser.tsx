@@ -216,7 +216,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
     isDev: config.isDev,
     title,
     pageId,
-    rootNotionPageId: site.rootNotionPageId,
+    rootNotionPageIdFraser: site.rootNotionPageIdFraser,
     recordMap
   })
 
@@ -259,12 +259,12 @@ export const NotionPage: React.FC<types.PageProps> = ({
       <NotionRenderer
         bodyClassName={cs(
           styles.notion,
-          pageId === site.rootNotionPageId && 'index-page'
+          pageId === site.rootNotionPageIdFraser && 'index-page'
         )}
         darkMode={isDarkMode}
         components={components}
         recordMap={recordMap}
-        rootPageId={site.rootNotionPageId}
+        rootPageId={site.rootNotionPageIdFraser}
         rootDomain={site.domain}
         fullPage={!isLiteMode}
         previewImages={!!recordMap.preview_images}
