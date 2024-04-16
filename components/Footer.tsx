@@ -34,7 +34,9 @@ export const FooterImpl: React.FC = () => {
   }, [])
 
   return (
-    <></>
+    <footer className={styles.footer}>
+      
+    </footer>
    
   )
 }
