@@ -136,6 +136,7 @@ export const FooterImpl: React.FC = () => {
         )}
       </div>
     </footer>
+   
   )
 }
 
